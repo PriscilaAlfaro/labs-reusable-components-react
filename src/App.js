@@ -11,20 +11,32 @@ import Loader from './Loader'
 
 
 const App= () => {
-  const title={
+  const title = {
     headerTitle:  "Get ready for adventure!",
     headerBackgroundColor: "rgba(21, 20, 20, 0.92)",
   }
   
+  const card = {
+    title: "The beginning of everything.",
+    image: "./images/magic-pattern.png",
+    date: "January 2022",
+    number:"01."
+  }
+
+  const profileImage = {
+    image: "./images/profile.png",
+    name: "Linus Ekenstam",
+    textColor: "#EBFF00",
+  }
 
   return (
     <div className="main-container">
       <Header title={title.headerTitle} backgroundColor={title.headerBackgroundColor}/>
-      <ProfileImage />
+      <ProfileImage image={profileImage.image} name={profileImage.name} textColor={profileImage.image}/>
       <h1>Week 11- Labs</h1>
       <SearchBar />
       <Button />
-      <Card />
+      <Card title={card.title} image={card.image} date={card.date} number={card.number}/>
       <CookieAlert/>
       <Loader />
       <Footer />

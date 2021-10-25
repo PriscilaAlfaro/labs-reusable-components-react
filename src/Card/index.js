@@ -1,11 +1,16 @@
 import React from 'react';
-// import './App.css';
+import './card.css';
 
 
-const Card=()=> {
+const Card = ({title, image, date, number})=> {
     return (
         <div className="card-container">
-            <index>card</index>
+            <img className="card-image" src={image} alt="card patron"/>
+            <div className="paragraph-container">
+            <p>{date.toUpperCase()}</p>
+            <p>{number}</p>
+            </div>
+            <h1 className="card-title">{title}</h1>
         </div>
     );
 }

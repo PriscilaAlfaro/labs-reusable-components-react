@@ -1,11 +1,13 @@
 import React from 'react';
-// import './App.css';
+import './profileImage.css';
 
 
-const ProfileImage=()=> {
+const ProfileImage = ({ image, name, textColor})=> {
     return (
-        <div className="profileImage-container">
-            <h1>ProfileImage</h1>
+        <div className="profile-container">
+            <div className="profile-overlay"></div>
+            <img className="profile-image" src={image} alt="profile" />
+            <p className="profile-name">{name}</p>
         </div>
     );
 }

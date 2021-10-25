@@ -7,10 +7,10 @@ const Header = ({ title, backgroundColor})=> {
         <div className="header-container" style={{background: backgroundColor}}>
             <h1 className="header-title">{title}</h1>
             <div className="header-pages">
-                <p>about</p>
-                <p>trips</p>
-                <p>pricing</p>
-                <p>contact</p>
+                <p className="header-paragraph">about</p>
+                <p className="header-paragraph">trips</p>
+                <p className="header-paragraph">pricing</p>
+                <p className="header-paragraph">contact</p>
             </div>
             <img className="header-image" src="./images/circle.png" alt="yellow circle"/>
         </div>
