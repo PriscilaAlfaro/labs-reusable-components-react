@@ -29,12 +29,22 @@ const App= () => {
     textColor: "#EBFF00",
   }
 
+  const searchBar1 = {
+    primaryColor:"#F8E1ED",
+    secondaryColor: "#B5A2AC"
+  }
+
+  const searchBar2 = {
+    primaryColor: "#FFF5E8",
+    secondaryColor: "#FABB6F"
+  }
+
   return (
     <div className="main-container">
       <Header title={title.headerTitle} backgroundColor={title.headerBackgroundColor}/>
       <ProfileImage image={profileImage.image} name={profileImage.name} textColor={profileImage.image}/>
-      <h1>Week 11- Labs</h1>
-      <SearchBar />
+      <SearchBar primaryColor={searchBar1.primaryColor} secondaryColor={searchBar1.secondaryColor} />
+      <SearchBar primaryColor={searchBar2.primaryColor} secondaryColor={searchBar2.secondaryColor} />
       <Button />
       <Card title={card.title} image={card.image} date={card.date} number={card.number}/>
       <CookieAlert/>

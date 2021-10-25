@@ -1,0 +1,57 @@
+.searchBar-container{
+max-width: 662px;
+height: 80px;
+font-family: Monaco;
+display: flex;
+flex-direction: row;
+
+margin: 50px auto;
+align-items: center;
+color: white;
+}
+
+.searchBar-input{
+height: 80px;
+width: 530px;
+text-align: center;
+font-size: 30px;
+border-radius: 40px;
+    border: medium;
+}
+
+.fa-search{
+width: 40px;
+height: 40px;
+
+position: relative;
+left: 10%;
+top: 10%;
+}
+
+.searchBar-union{
+width: 130px;
+height: 85px;
+z-index: 1;
+}
+
+.searchBar-find{
+width: 130px;
+height: 85px;
+font-size: 30px;
+align-items: center;
+text-align: center;
+display: flex;
+border-radius: 40px;
+justify-content: center;
+}
+
+.searchBar-output{
+/* background: wheat; */
+text-align: center;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    min-height: 30px;
+    font-family: Monaco;
+    font-size: 15px;
+}
