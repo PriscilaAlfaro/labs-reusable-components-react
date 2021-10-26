@@ -1,12 +1,15 @@
 import React from 'react';
-// import './App.css';
+import './button.css';
 
 
-const Button=()=> {
+const Button = ({ disabled, buttonText, textColor, buttonColor, setDisable})=> {
+    
+    const handleDisable=()=>{
+        setDisable(true)
+    }
+
     return (
-        <div className="button-container">
-            <button>Button</button>
-        </div>
+        <button className={`button-button ${disabled ? "disable" : ""}`} onClick={handleDisable} style={{ color: textColor, background: buttonColor}}>{buttonText}</button>
     );
 }
 

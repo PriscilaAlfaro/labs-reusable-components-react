@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Header from './Header'
 import Footer from './Footer'
@@ -11,6 +11,8 @@ import Loader from './Loader'
 
 
 const App= () => {
+  const [disable, setDisable]= useState(false);
+
   const title = {
     headerTitle:  "Get ready for adventure!",
     headerBackgroundColor: "rgba(21, 20, 20, 0.92)",
@@ -41,13 +43,20 @@ const App= () => {
     buttonYellow: "./images/button-yellow.png",
   }
 
+  const button = {
+    disabled: disable,
+    buttonText: "subscribe",
+    textColor: "#005D25",
+    buttonColor: "#FFFFF",
+  }
+
   return (
     <div className="main-container">
       <Header title={title.headerTitle} backgroundColor={title.headerBackgroundColor}/>
       <ProfileImage image={profileImage.image} name={profileImage.name} textColor={profileImage.image}/>
       <SearchBar primaryColor={searchBar1.primaryColor} secondaryColor={searchBar1.secondaryColor} />
       <SearchBar primaryColor={searchBar2.primaryColor} secondaryColor={searchBar2.secondaryColor} />
-      <Button />
+      <Button setDisable={setDisable} disabled={button.disabled} buttonText={button.buttonText} textColor={button.textColor} buttonColor={button.buttonColor} />
       <Card title={card.title} image={card.image} date={card.date} number={card.number}/>
       <CookieAlert/>
       <Loader />
