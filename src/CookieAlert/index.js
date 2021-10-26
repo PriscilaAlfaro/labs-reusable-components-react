@@ -1,10 +1,10 @@
 import React from 'react';
-// import './App.css';
+import './cookieAlert.css';
 
-const CookieAlert=()=>{
+const CookieAlert = ({ text, textColor, backgroundColor})=>{
     return (
-        <div className="cookieAlert-container">
-            <h1>CookieAlert</h1>
+        <div className="cookieAlert-container" style={{ color: textColor, background: backgroundColor }}>
+            <p className="cookieAlert-text">{text}</p>
         </div>
     );
 }

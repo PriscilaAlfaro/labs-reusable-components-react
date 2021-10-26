@@ -50,6 +50,12 @@ const App= () => {
     buttonColor: "#FFFFF",
   }
 
+  const cookieAlert ={
+    text:"We use cookies to provide you with a better service and for promotional purposes. By continuing to use this site you consent to our use of cookies as described in our cookie policy",
+    textColor: "#FAFAFA",
+    backgroundColor: "#000000"
+  }
+
   return (
     <div className="main-container">
       <Header title={title.headerTitle} backgroundColor={title.headerBackgroundColor}/>
@@ -58,7 +64,7 @@ const App= () => {
       <SearchBar primaryColor={searchBar2.primaryColor} secondaryColor={searchBar2.secondaryColor} />
       <Button setDisable={setDisable} disabled={button.disabled} buttonText={button.buttonText} textColor={button.textColor} buttonColor={button.buttonColor} />
       <Card title={card.title} image={card.image} date={card.date} number={card.number}/>
-      <CookieAlert/>
+      <CookieAlert text={cookieAlert.text} textColor={cookieAlert.textColor} backgroundColor={cookieAlert.backgroundColor}/>
       <Loader />
       <Footer />
     </div>
