@@ -36,7 +36,9 @@ const App= () => {
 
   const searchBar2 = {
     primaryColor: "#FFF5E8",
-    secondaryColor: "#FABB6F"
+    secondaryColor: "#FABB6F",
+    buttonPink: "./images/button-pink.png",
+    buttonYellow: "./images/button-yellow.png",
   }
 
   return (

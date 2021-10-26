@@ -13,7 +13,7 @@ const [search, setSearch]= useState("");
     return (
         <>
         <div className="searchBar-container">
-            <i class="fas fa-search" style={{ color: secondaryColor }}></i>
+            <i className="fas fa-search" style={{ color: secondaryColor }}></i>
             <input
                 className="searchBar-input"
                 placeholder="type something..."
@@ -22,8 +22,7 @@ const [search, setSearch]= useState("");
                 value={search}
                 style={{ background: primaryColor }}
             />
-                <span className="searchBar-union" style={{ background: secondaryColor }}></span>
-            <p className="searchBar-find" style={{ background: secondaryColor}}>find</p>
+                <button onClick={console.log('searching')} className="searchBar-button" style={{ background: secondaryColor}}>find</button>
         </div>
          <div className="searchBar-output">Search output: {search}</div>
          </>
