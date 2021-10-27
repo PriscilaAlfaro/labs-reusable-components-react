@@ -12,6 +12,7 @@ import Loader from './Loader'
 
 const App= () => {
   const [disable, setDisable]= useState(false);
+  const [loading, setLoading] = useState(true);
 
   const title = {
     headerTitle:  "Get ready for adventure!",
@@ -29,6 +30,18 @@ const App= () => {
     image: "./images/profile.png",
     name: "Linus Ekenstam",
     textColor: "#EBFF00",
+  }
+
+const loader = {
+  color: "#9F4A4A",
+  size:"100px",
+  loading: loading,
+}
+
+  const loader2 = {
+    color: "rgb(255, 93, 162)",
+    size: "100px",
+    loading: loading,
   }
 
   const searchBar1 = {
@@ -50,23 +63,29 @@ const App= () => {
     buttonColor: "#FFFFF",
   }
 
-  const cookieAlert ={
+  const cookieAlert = {
     text:"We use cookies to provide you with a better service and for promotional purposes. By continuing to use this site you consent to our use of cookies as described in our cookie policy",
     textColor: "#FAFAFA",
     backgroundColor: "#000000"
+  }
+
+  const footer = {
+    color: "#EEEDED",
+    links: ["About", "Careers", "Pricing", "Feedback", "Roadmap"]
   }
 
   return (
     <div className="main-container">
       <Header title={title.headerTitle} backgroundColor={title.headerBackgroundColor}/>
       <ProfileImage image={profileImage.image} name={profileImage.name} textColor={profileImage.image}/>
+      <Loader color={loader.color} size={loader.size} loading={loading} setLoading={setLoading}/>
+      <Loader color={loader2.color} size={loader.size} loading={loading} setLoading={setLoading} />
       <SearchBar primaryColor={searchBar1.primaryColor} secondaryColor={searchBar1.secondaryColor} />
       <SearchBar primaryColor={searchBar2.primaryColor} secondaryColor={searchBar2.secondaryColor} />
       <Button setDisable={setDisable} disabled={button.disabled} buttonText={button.buttonText} textColor={button.textColor} buttonColor={button.buttonColor} />
       <Card title={card.title} image={card.image} date={card.date} number={card.number}/>
       <CookieAlert text={cookieAlert.text} textColor={cookieAlert.textColor} backgroundColor={cookieAlert.backgroundColor}/>
-      <Loader />
-      <Footer />
+      <Footer color={footer.color} links={footer.links}/>
     </div>
   );
 }
