@@ -14,3 +14,6 @@ const Loader = ({ color, size, loading, setLoading })=> {
 }
 
 export default Loader;
+
+
+//see https://codepen.io/xram/pen/thLsk
