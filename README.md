@@ -19,7 +19,7 @@ Create the component and style it according to the [designs](https://www.figma.c
 ## Available Scripts
 
 In the project directory, you can run:
-
+### `npm install`
 ### `yarn start`
 
 Runs the app in the development mode.\
