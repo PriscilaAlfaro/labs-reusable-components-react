@@ -7,7 +7,7 @@ const ProfileImage = ({ image, name, textColor})=> {
         <div className="profile-container">
             <div className="profile-overlay"></div>
             <img className="profile-image" src={image} alt="profile" />
-            <p className="profile-name">{name}</p>
+            <p className="profile-name" style={{ color: textColor}}>{name}</p>
         </div>
     );
 }
