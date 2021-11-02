@@ -14,7 +14,7 @@ This week you'll build some reusable components. We suggest that you split up in
 <Loader />
 ```
 
-Create the component and style it according to the [designs] (https://www.figma.com/file/TvzlqGmdny9sJEBz82MwX9/Components-Design-Layouts---Technigo?node-id=0%3A1). Make it take in props so it becomes reusable. Such as `<Header title="Welcome to my site"/>` You can build and store them in CodeSandbox or on Github. Try the component you've built out with passing different props to it and see how it changes. What parts could be dynamic and what parts works best as static?
+Create the component and style it according to the [designs](https://www.figma.com/file/TvzlqGmdny9sJEBz82MwX9/Components-Design-Layouts---Technigo?node-id=0%3A1). Make it take in props so it becomes reusable. Such as `<Header title="Welcome to my site"/>` You can build and store them in CodeSandbox or on Github. Try the component you've built out with passing different props to it and see how it changes. What parts could be dynamic and what parts works best as static?
 
 ## Available Scripts
 
